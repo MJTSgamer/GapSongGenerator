@@ -28,7 +28,8 @@ namespace GapSongGenerator
 
                 if (switchIt == 1)
                 {
-                    string[] words = line.Split(" ");
+                    char[] delimiterChars = { ' ', '-', ',' };
+                    string[] words = line.Split(delimiterChars);
 
                     int r = rmd.Next(0, words.Count());
 
